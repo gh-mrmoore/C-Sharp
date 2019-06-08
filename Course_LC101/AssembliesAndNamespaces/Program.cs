@@ -4,6 +4,7 @@
  * code we're creating is compiling in to .NET assemblies as well
  * Build >> Solution will create a distributable version of the program
 */
+//assemblies also available thru nu-get
 
 
 namespace AssembliesAndNamespaces

@@ -5,8 +5,4 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="jQuery" Version="3.4.1" />
-  </ItemGroup>
-
 </Project>
