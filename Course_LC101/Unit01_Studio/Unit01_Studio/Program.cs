@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Course_LC101
+namespace Unit01_Studio
 {
     class Program
     {
