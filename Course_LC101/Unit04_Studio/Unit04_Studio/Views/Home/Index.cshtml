@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Unit 04 Studio Page";
+}
+
+<h1>Unit 05 Studio Home Page - Pets!</h1>
+
+@if (ViewBag.dogs.Count == 0)
+{
+    <p>No dogs stored in dictionary yet.</p>
+}
+
+<p><a asp-controller="Home" asp-action="Add">Add a Dog</a></p>
+
+<form method="post">
+    <table class="table table-striped">
+        <tr>
+            <th>Breed</th>
+            <th>Size</th>
+            <th>Action</th>
+        </tr>
+        @foreach (KeyValuePair<string, string> dog in ViewBag.dogs)
+        {
+            <tr>
+                <td>@dog.Key</td>
+                <td>@dog.Value</td>
+                <td><input type="checkbox" name="deletedogs" id="deletedogs" value="@dog.Key" /></td>
+            </tr>
+        }
+    </table>
+    <input type="submit" value="Delete Dogs" />
+</form>
