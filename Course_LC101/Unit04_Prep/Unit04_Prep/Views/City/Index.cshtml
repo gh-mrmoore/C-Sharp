@@ -1,0 +1,38 @@
+﻿@*
+    Comments for the C-Sharp integrated language elements:
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+    Not visible when viewing template
+*@
+@{
+    //remove any layout content...
+    Layout = null;
+    //hot deploy possible for templates while server is running
+
+    /*
+     * Move this data over to the controller
+    List<string> cities = new List<string>();
+
+    cities.Add("New York City");
+    cities.Add("London");
+    cities.Add("Kansas City");
+    */
+
+    //data should come from the model - there's no persistence here
+}
+<h1>City Home Page</h1>
+<!--HTML Comments visible when viewing templates-->
+
+<p><a asp-controller="City" asp-action="Add">Add a City</a></p>
+<!--Link above is not tied to default routing structure: can be re-factored more easily-->
+
+@if (ViewBag.cities.Count == 0)
+{
+    <p>No cities stored in list yet.</p>
+}
+
+<ul>
+    @foreach (string city in ViewBag.cities)
+    {
+        <li>@city</li>
+    }
+</ul>

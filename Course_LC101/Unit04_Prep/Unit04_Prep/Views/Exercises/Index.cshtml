@@ -1,0 +1,26 @@
+﻿@{
+    //Layout = null;
+}
+<h1>Unit 04 Prep Exercises</h1>
+<p>Prep exercises will go here.</p>
+
+<hr />
+
+<h2>List of Locations Using C-Sharp Dictionary</h2>
+
+<p><a asp-controller="Exercises" asp-action="Add">Add a City</a></p>
+
+@if (ViewBag.locations.Count == 0)
+{
+    <p>Sorry, no locations add yet.</p>
+}
+
+<table width="50%"class="table table-striped">
+    @foreach (KeyValuePair<string, string> location in ViewBag.locations)
+    {
+        <tr>
+            <td>@location.Key</td>
+            <td>@location.Value</td>
+        </tr>
+    }
+</table>
