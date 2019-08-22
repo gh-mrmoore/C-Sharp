@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Unit 04 Studio Page";
+}
+
+<h1>Unit 05 Prep Home Page - Pets!</h1>
+
+<h2>List of Dogs and Their Sizes</h2>
+
+@if (ViewBag.dogs.Count == 0)
+{
+    <p>No dogs stored in dictionary yet.</p>
+}
+
+<p><a asp-controller="Home" asp-action="Add">Add a Dog</a></p>
+
+<form method="post" action="/Home/DeleteMany">
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Breed</th>
+            <th>Size</th>
+            <th>Action</th>
+        </tr>
+        @foreach (KeyValuePair<int, Dogs> dog in ViewBag.dogs)
+        {
+    <tr>
+        <td>@dog.Key</td>
+        <td>@dog.Value.DogBreed</td>
+        <td>@dog.Value.DogSize</td>
+        <td><input type="checkbox" name="deletedogs" id="deletedogs" value="@dog.Key" /></td>
+    </tr>
+        }
+    </table>
+    <input type="submit" value="Delete Dogs" />
+</form>
+
+<hr />
+
+<p>Note: the delete function only deletes the &quot;Dogs&quot; object from the Dictionary list of Dogs objects. It does not currently delete the object itself.</p>
