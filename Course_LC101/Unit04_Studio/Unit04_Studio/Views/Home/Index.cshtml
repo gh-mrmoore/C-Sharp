@@ -4,6 +4,8 @@
 
 <h1>Unit 05 Studio Home Page - Pets!</h1>
 
+<h2>List of Dogs and Their Sizes</h2>
+
 @if (ViewBag.dogs.Count == 0)
 {
     <p>No dogs stored in dictionary yet.</p>
@@ -11,7 +13,7 @@
 
 <p><a asp-controller="Home" asp-action="Add">Add a Dog</a></p>
 
-<form method="post">
+<form method="post" action="/Home/DeleteMany">
     <table class="table table-striped">
         <tr>
             <th>Breed</th>
@@ -28,4 +30,19 @@
         }
     </table>
     <input type="submit" value="Delete Dogs" />
+</form>
+
+<hr />
+
+<h2>Delete a single dog from the list.</h2>
+
+<form method="post" action="/Home/DeleteOne">
+    <select name="onedog" id="onedog">
+        @foreach (KeyValuePair<string, string> puppy in ViewBag.dogs)
+        {
+            <option value="@puppy.Key">@puppy.Key</option>
+        }
+    </select>
+    <br />
+    <input type="submit" value="Remove Single Dog" />
 </form>

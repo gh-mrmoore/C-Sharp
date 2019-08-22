@@ -25,25 +25,38 @@ namespace Unit04_Studio.Controllers
 
         [HttpPost]
         [Route("/Home/Add")]
-        public IActionResult ProcessAdd(string dogbreed, string dogsize)
+        public IActionResult ProcessAdd(String dogbreed, String dogsize)
         {
-            Dogs.Add(dogbreed, dogsize);
+            if (String.IsNullOrWhiteSpace(dogbreed) || String.IsNullOrWhiteSpace(dogsize))
+            {
+                return Redirect("/Home/Add");
+            } else
+            {
+                Dogs.Add(dogbreed, dogsize);
 
+                return Redirect("/Home");
+            }
+        }
+
+        [HttpPost]
+        public IActionResult DeleteMany(string[] deletedogs)
+        {
+            
+            foreach (string dog in deletedogs)
+            {
+                Dogs.Remove(dog);
+            }
+            
             return Redirect("/Home");
         }
 
         [HttpPost]
-        [Route("/Home/DeleteMany")]
-        public IActionResult DeleteMany(string[] dogs)
+        public IActionResult DeleteOne(string onedog)
         {
-            foreach (string dog in dogs)
-            {
-                Console.WriteLine(dog);
-            }
+            Dogs.Remove(onedog);
 
             return Redirect("/Home");
         }
-
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
