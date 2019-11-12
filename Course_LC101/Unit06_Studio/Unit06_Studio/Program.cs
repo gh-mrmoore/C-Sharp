@@ -7,7 +7,11 @@ namespace Unit06_Studio
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Restaurant Menu");
+            Console.WriteLine("Enter 1 to create a menu item");
+            Console.WriteLine("Enter 2 to create a menu");
+            Console.WriteLine("Enter 3 to modify a menu");
+
             //create two menus to work with
             Menu FirstMenu = new Menu("First Menu");
             Menu SecondMenu = new Menu("SECOND MENU");

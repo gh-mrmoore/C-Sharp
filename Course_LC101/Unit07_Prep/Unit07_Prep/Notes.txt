@@ -1,0 +1,33 @@
+﻿Consider the group of classes that you designed.
+Suppose you had a web program that used these classes,
+and you needed to assign a unique ID to every object
+created from one of these classes within the application.
+In other words, each such class should have an Id property,
+and no two objects created from any of the classes may
+have the same ID value. Create an abstract class, 
+AbstractEntity, that contains the behavior for assigning 
+and accessing such a unique ID for each class that 
+extends it. Add this class to your program above, and 
+add AbstractEntity to the class hierarchy in the correct place.
+
+---------------------------------------------------------------
+
+I actually made the Shape class itself the abstract class, my reasoning
+for this is based on the fact that circles, squares and rectangles are
+all shapes, but each one has its own calculation for area (the shared trait
+among the shapes) and each one is defined by different measurements (radius
+for circles, length and width for rectangles, the uniform sides of a square).
+
+*****************************************************************
+*****************************************************************
+
+When creating controllers in our MVC applications, we were required to extend 
+the Controller class. Explore the Controller class documentation, and look 
+for methods that you've used within your own controllers.
+
+If you wanted to override a method of Controller so that every time you rendered 
+a view, ViewBag.SiteTitle = "My MVC App" was executed, which method would you override?
+I can't determine which of the view methods would need to be overriden.
+
+For this method, would you be allowed to override it? That is, is it declared virtual?
+--all the view related methods appear to be defined as virtual methods

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="A question has one correct answer and one or more incorrect answer(s).">
+    <Position X="7.923" Y="0.732" Height="0.845" Width="2.343" />
+  </Comment>
+  <Comment CommentText="a question with a fixed set of possible answers, of which only one may be chosen and only one answer is correct">
+    <Position X="2.387" Y="4.554" Height="0.815" Width="1.968" />
+  </Comment>
+  <Comment CommentText="a question with a fixed set of possible answers, of which any number may be chosen; there is one correct combination of choices">
+    <Position X="8.482" Y="4.536" Height="0.893" Width="2.224" />
+  </Comment>
+  <Comment CommentText="a question that has a true/false answer">
+    <Position X="5.911" Y="4.744" Height="0.589" Width="1.7" />
+  </Comment>
+  <Comment CommentText="A quiz may have many different questions.">
+    <Position X="4.024" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Do we want to allow users to see all questions and answer out of order or should they only be able to answer one at a time?">
+    <Position X="0.5" Y="1.262" Height="1.06" Width="1.7" />
+  </Comment>
+  <Comment CommentText="Will users be able to go back and change their answers once the question of displaying questions is answered?">
+    <Position X="0.5" Y="2.435" Height="1.071" Width="1.7" />
+  </Comment>
+  <Class Name="Unit07_Studio.Quiz">
+    <Position X="2.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Quiz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unit07_Studio.Question">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAEAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unit07_Studio.MultipleChoiceQuestion">
+    <Position X="2.25" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MultipleChoiceQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unit07_Studio.CheckBoxQuestion">
+    <Position X="8.25" Y="3.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CheckBoxQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unit07_Studio.TrueFalseQuestion">
+    <Position X="5.5" Y="3.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TrueFalseQuestion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
