@@ -9,6 +9,7 @@ namespace Unit07_Studio
         //fields for the Question class
         private static int thisQuestionID = 0;
         public int questionID { get; set; }
+        public string questionText { get; set; }
         public string correctAnswer { get; set; }
 
         //Constructor for Question class
