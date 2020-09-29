@@ -42,6 +42,23 @@ namespace ControlAndCollections
             }
             Console.WriteLine(day);
 
+            Console.WriteLine("Which code block would you like to run?");
+            string CodeBlock = Console.ReadLine();
+            string TestResult;
+            switch(CodeBlock)
+            {
+                case "Studio":
+                    TestResult = "Studio Code Worked";
+                    break;
+                case "Exercises":
+                    TestResult = "Exercises Code Worked";
+                    break;
+                default:
+                    TestResult = "Other Code did not work";
+                    break;
+            }
+            Console.WriteLine(TestResult);
+
             for (int i = 100; i >= 0; i-=10)
             {
                 Console.WriteLine(i);

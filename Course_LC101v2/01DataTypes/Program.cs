@@ -75,8 +75,9 @@ namespace DataTypes
                 CircleRadius = double.Parse(Console.ReadLine());
             }
             while (CircleRadius < 0);
-            double CircleArea = Math.Pow(CircleRadius, 2) * Math.PI;
-            Console.WriteLine("The area of the circle is: " + CircleArea);
+            //double CircleArea = Math.Pow(CircleRadius, 2) * Math.PI;
+            //Console.WriteLine("The area of the circle is: " + CircleArea);
+            Console.WriteLine("The area of the circle is: " + Circle.CircleRadiusCalc(CircleRadius));
         }
     }
 }
