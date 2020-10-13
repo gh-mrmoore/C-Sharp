@@ -49,44 +49,59 @@ namespace TechJobsConsole
             {
                 string aValue = row[column];
 
-                if (aValue.Contains(value))
+                if (aValue.ToLower().Contains(value.ToLower()))
                 {
                     jobs.Add(row);
                 }
             }
-
             return jobs;
         }
 
-        public static List<Dictionary<string, string>> FindByValue(string SearchTerm)
+
+        //public static List<Dictionary<string, string>> FindByValue(string value)
+        //{
+        //    // load data, if not already loaded
+        //    LoadData();
+
+        //    List<Dictionary<string, string>> fbvJobs = new List<Dictionary<string, string>>();
+
+        //    foreach (Dictionary<string, string> jobRow in AllJobs)
+        //    {
+        //        foreach (string key in jobRow.Keys)
+        //        {
+        //            if (jobRow[key].ToLower().Contains(value.ToLower()))
+        //            {
+        //                fbvJobs.Add(jobRow);
+        //                break;     // just need to find it once
+        //            }
+        //        }
+        //    }
+        //    return fbvJobs;
+        //}
+
+        public static List<Dictionary<string, string>> FindByValue(string value)
         {
-            //load data, if not already loaded
+            // load data, if not already loaded
             LoadData();
 
-            //create a list of dictionary items to return to TechJobsConsole
-            List<Dictionary<string, string>> someJobs = new List<Dictionary<string, string>>();
+            List<Dictionary<string, string>> fbvJobs = new List<Dictionary<string, string>>();
 
-            //get each dictionary that exists as a row in AllJobs
-            foreach(Dictionary<string, string> jobRow in AllJobs)
+            foreach (Dictionary<string, string> jobRow in AllJobs)
             {
-                //cycle through each value string to see if it contains the search term
-                foreach(KeyValuePair<string, string> thisJob in jobRow)
+                foreach (string jobValue in jobRow.Values)
                 {
-                    if (thisJob.Value.ToLower().Contains(SearchTerm.ToLower()))
+                    if (jobValue.ToLower().Contains(value.ToLower()))
                     {
-                        if (someJobs.Contains(jobRow))
-                        {
-                            continue;
-                        } else
-                        {
-                            someJobs.Add(jobRow);
-                        }
+                        fbvJobs.Add(jobRow);
+                        break;     // just need to find it once
                     }
                 }
             }
-
-            return someJobs;
+            return fbvJobs;
         }
+
+
+
 
         /*
          * Load and parse data from job_data.csv

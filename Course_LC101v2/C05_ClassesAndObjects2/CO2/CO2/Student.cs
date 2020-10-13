@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace HelloWorld
+namespace CO2
 {
-    class Hello
+    class Student
     {
     }
 }

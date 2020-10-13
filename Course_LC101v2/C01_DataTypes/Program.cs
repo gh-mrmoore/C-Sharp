@@ -78,6 +78,17 @@ namespace DataTypes
             //double CircleArea = Math.Pow(CircleRadius, 2) * Math.PI;
             //Console.WriteLine("The area of the circle is: " + CircleArea);
             Console.WriteLine("The area of the circle is: " + Circle.CircleRadiusCalc(CircleRadius));
+            Console.WriteLine("The circumference of the circle is: " + Circle.CircleCircumference(CircleRadius));
+            Console.WriteLine("The diameter of the circle is: " + Circle.CircleDiameter(CircleRadius));
+
+            //get gallons of gas
+            Console.WriteLine("MPG?");
+            double studioMPG = double.Parse(Console.ReadLine());
+            Console.WriteLine("You would use " + Circle.GetTrip(Circle.CircleCircumference(CircleRadius), studioMPG)+ "gallons of gas to go aroud a circle of " + Circle.CircleCircumference(CircleRadius));
+
+
+
+
         }
     }
 }
