@@ -26,10 +26,16 @@ namespace DataTypes
             //Console.WriteLine(numberArray[1]);
             //Console.WriteLine(anotherStringArray[2]);
 
-            //string NewMessage = Hello.DisplayMessage("sp");
-            //string NewerMessage = Hello.DisplayMessage("fr");
-            //Console.WriteLine(NewMessage);
-            //Console.WriteLine(NewerMessage);
+            string NewMessage = Hello.DisplayMessage("sp");
+            string NewerMessage = Hello.DisplayMessage("fr");
+            string NewestMessage = Hello.DisplayMessage("cn");
+            Console.WriteLine(NewMessage);
+            Console.WriteLine(NewerMessage);
+            Console.WriteLine(NewestMessage);
+
+            Hi HelloIngrid = new Hi();
+            string HiMessage = HelloIngrid.SayHi();
+            Console.WriteLine(HiMessage);
 
             ////Exercises
             //Console.WriteLine("What is your name?");
@@ -71,7 +77,8 @@ namespace DataTypes
 
             double CircleRadius = -1;
             do
-            { Console.WriteLine("What is the radius of the circle?");
+            {
+                Console.WriteLine("What is the radius of the circle?");
                 CircleRadius = double.Parse(Console.ReadLine());
             }
             while (CircleRadius < 0);
@@ -84,7 +91,8 @@ namespace DataTypes
             //get gallons of gas
             Console.WriteLine("MPG?");
             double studioMPG = double.Parse(Console.ReadLine());
-            Console.WriteLine("You would use " + Circle.GetTrip(Circle.CircleCircumference(CircleRadius), studioMPG)+ "gallons of gas to go aroud a circle of " + Circle.CircleCircumference(CircleRadius));
+            Circle.GetTrip2(Circle.CircleCircumference(CircleRadius), studioMPG);
+            Console.WriteLine("You would use " + Circle.GetTrip(Circle.CircleCircumference(CircleRadius), studioMPG) + "gallons of gas to go aroud a circle of " + Circle.CircleCircumference(CircleRadius));
 
 
 

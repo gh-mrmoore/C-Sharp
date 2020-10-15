@@ -29,5 +29,12 @@ namespace DataTypes
             double gallonsUsed = circumference / mpg;
             return gallonsUsed;
         }
+
+        public static void GetTrip2(double circumference, double mpg)
+        {
+            double gallonsUsed = circumference / mpg;
+
+            Console.WriteLine(gallonsUsed);
+        }
     }
 }
