@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="CD and DVD similarities:&#xD;&#xA;	&gt;&gt;both circular&#xD;&#xA;	&gt;&gt;both spin&#xD;&#xA;	&gt;&gt;both about the same size&#xD;&#xA;	&gt;&gt;both can be re-written if done on correct media&#xD;&#xA;&#xD;&#xA;CD and DVD differences:&#xD;&#xA;	&gt;&gt;data volume&#xD;&#xA;	&gt;&gt;rotation speed?&#xD;&#xA;	&gt;&gt;media type typically stored (music vs video)">
+    <Position X="1" Y="0.764" Height="7.875" Width="3.638" />
+  </Comment>
+  <Class Name="Interfaces_Polymorphism.Studio_BaseDisc" Collapsed="true">
+    <Position X="8.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQABAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>Studio_BaseDisc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Interfaces_Polymorphism.Studio_CD" Collapsed="true">
+    <Position X="11.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Studio_CD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Interfaces_Polymorphism.Studio_DVD" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Studio_DVD.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="Interfaces_Polymorphism.IOpticalDisc" Collapsed="true">
+    <Position X="15.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IOpticalDisc.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
