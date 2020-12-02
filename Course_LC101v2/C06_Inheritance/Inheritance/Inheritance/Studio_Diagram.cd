@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="Quiz:&#xD;&#xA;	A quiz is a list of questions&#xD;&#xA;	A quiz has to be able to assemble the list of questions and display them.&#xD;&#xA;	A quiz needs to be able to keep track of how many questions are answered correctly and how many incorrectly.&#xD;&#xA;	&#xD;&#xA;&#xD;&#xA;Questions:&#xD;&#xA;	A question has the text of the question and a correct answer (or combination of answers)&#xD;&#xA;	Questions can be of different types (MC, short-answer, true/false, etc.&#xD;&#xA;&#xD;&#xA;TBD:&#xD;&#xA;	Should questions know whether the answer is right or not or should the quiz be able to tell?&#xD;&#xA;&#xD;&#xA;">
+    <Position X="0.5" Y="0.5" Height="2.361" Width="10.04" />
+  </Comment>
+  <Class Name="Inheritance.Studio_Quiz" Collapsed="true">
+    <Position X="0.5" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAIAAAAAAAAAEAAEABAAAAAAAAAAA=</HashCode>
+      <FileName>Studio_Quiz.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Studio_Question" Collapsed="true">
+    <Position X="3.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEgAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Studio_Question.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Studio_MultipleChoice" Collapsed="true">
+    <Position X="2" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Studio_MultipleChoice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.Studio_Checkbox" Collapsed="true">
+    <Position X="2" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Studio_Checkbox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Inheritance.StudioTrueFalse" Collapsed="true">
+    <Position X="5.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>StudioTrueFalse.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
