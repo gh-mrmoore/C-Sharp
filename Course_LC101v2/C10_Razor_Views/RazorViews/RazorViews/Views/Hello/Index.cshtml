@@ -1,0 +1,25 @@
+﻿<div>
+    <h1>Hello</h1>
+    <hr />
+    <ul>
+        @foreach(string dog in ViewBag.puppies)
+        {
+            <li>@dog</li>
+        }
+    </ul>
+    <hr />
+    @foreach(var puppy in ViewBag.puppyObjects)
+    {
+        @if (puppy.breedName == "Dalmation")
+        {
+            <p>Find me at the firehouse!</p>
+        }
+        <p>@puppy.breedName is @puppy.breedSize</p>
+        <ul>
+            @foreach (string info in puppy.breedInfo)
+            {
+                <li>@info</li>
+            }
+        </ul>
+    }
+</div>

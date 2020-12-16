@@ -1,0 +1,36 @@
+﻿<div>
+    <h1>Events Form</h1>
+    <hr />
+    @if (ViewBag.eventList.Count == 0)
+    {
+        <p>No Events in list.</p>
+    }
+    else
+    {
+        <table>
+            <tr>
+                <th>Event Name</th>
+                <th>Event Description</th>
+            </tr>
+            @foreach (KeyValuePair<string, string> codeEvent in ViewBag.eventList)
+            {
+                <tr>
+                    <td>@codeEvent.Key</td>
+                    <td>@codeEvent.Value</td>
+                </tr>
+            }
+        </table>
+    }
+    <hr />
+    <form method="post">
+        <p>
+            <label for="eventName">Event Name:</label><br />
+            <input type="text" name="eventName" id="eventName" />
+        </p>
+        <p>
+            <label for="eventDescription">Event Description: </label><br />
+            <input type="text" name="eventDescription" id="eventDescription" />
+        </p>
+        <input type="submit" value="Add Event" />
+    </form>
+</div>
