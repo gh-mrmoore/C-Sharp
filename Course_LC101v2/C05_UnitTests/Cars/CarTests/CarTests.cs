@@ -11,7 +11,7 @@ namespace CarTests
         [TestInitialize]
         public void CreateCarObject()
         {
-            testCar = new Car("Chevrolet", "Bolt", 10, 50);
+            Car testCar = new Car("Chevrolet", "Bolt", 10, 50);
         }
 
         //TODO: constructor sets gasTankLevel properly
